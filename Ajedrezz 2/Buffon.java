@@ -3,12 +3,12 @@ import java.util.ArrayList;
 /**
 
  */
-public class Caballo extends Piezas
+public class Buffon extends Piezas
 {
-    Caballo(int cd) {
+    Buffon(int cd) {
         super(cd);  
-        if (this.cd == 1) setImage("CaballoN.png");
-        else setImage("CaballoB.png");
+        if (this.cd == 1) setImage("BuffonN.png");
+        else setImage("BuffonB.png");
     }
   
     public List<Posiciones> getLegalPositions(){

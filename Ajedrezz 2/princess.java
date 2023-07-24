@@ -4,12 +4,12 @@ import java.util.ArrayList;
 /**
 
  */
-public class Torre extends Piezas
+public class princess extends Piezas
 {
-    Torre(int cd) {
+    princess(int cd) {
         super(cd);  
-        if (this.cd == 1) setImage("TorreN.png");
-        else setImage("TorreB.png");
+        if (this.cd == 1) setImage("PrincesaN.png");
+        else setImage("PrincesaB.png");
     }
 
     public List<Posiciones> getLegalPositions(){

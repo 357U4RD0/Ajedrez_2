@@ -5,12 +5,12 @@ import java.util.ArrayList;
 /**
  
  */
-public class Alfil extends Piezas {
+public class Mago extends Piezas {
     
-    Alfil(int cd) {
+    Mago(int cd) {
         super(cd);  
-        if (this.cd == 1) setImage("AlfilN.png");
-        else setImage("AlfilB.png");
+        if (this.cd == 1) setImage("MagoN.png");
+        else setImage("MagoB.png");
     }
  
     public List<Posiciones> getLegalPositions(){

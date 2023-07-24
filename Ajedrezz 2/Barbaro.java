@@ -4,14 +4,14 @@ import java.util.ArrayList;
 /**
 
  */
-public class Peon extends Piezas {
+public class Barbaro extends Piezas {
 
     boolean SeMovio = false;
 
-    Peon(int cd) {
+    Barbaro(int cd) {
         super(cd);  
-        if (this.cd == 1) setImage("PeonN.png");
-        else setImage("PeonB.png");
+        if (this.cd == 1) setImage("BarbaroN.png");
+        else setImage("BarbaroB.png");
     }
 
     public List<Posiciones> getLegalPositions(){
