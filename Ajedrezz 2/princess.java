@@ -27,7 +27,7 @@ public class princess extends Piezas
             d++;
         }
         d = 1;
-        while (getY() + d < 8 && !isOwnPieceAtOffset(0, d)) {
+        while (getY() + d < 1 && !isOwnPieceAtOffset(0, d)) {
             list.add(new Posiciones(getX(), getY()+d));
             if (isPieceAtOffset(0, d)) break;
             d++;

@@ -13,29 +13,29 @@ public class Buffon extends Piezas
   
     public List<Posiciones> getLegalPositions(){
         List<Posiciones> list = new ArrayList<Posiciones>();
-        if (!isOwnPieceAtOffset(1,2) && isOnBoardDelta(1,2)) {
-            list.add(new Posiciones(getX()+1, getY()+2)); 
+        if (!isOwnPieceAtOffset(0,2) && isOnBoardDelta(0,2)) {
+            list.add(new Posiciones(getX()+0, getY()+2)); 
         }
-        if (!isOwnPieceAtOffset(1,-2) && isOnBoardDelta(1,-2)) {
-            list.add(new Posiciones(getX()+1, getY()-2)); 
+        if (!isOwnPieceAtOffset(0,-2) && isOnBoardDelta(0,-2)) {
+            list.add(new Posiciones(getX()+0, getY()-2)); 
         }
-        if (!isOwnPieceAtOffset(-1,2) && isOnBoardDelta(-1,2)) {
-            list.add(new Posiciones(getX()-1, getY()+2)); 
+        if (!isOwnPieceAtOffset(0,2) && isOnBoardDelta(0,2)) {
+            list.add(new Posiciones(getX()-0, getY()+2)); 
         }
-        if (!isOwnPieceAtOffset(-1,-2) && isOnBoardDelta(-1,-2)) {
-            list.add(new Posiciones(getX()-1, getY()-2)); 
+        if (!isOwnPieceAtOffset(-0,-2) && isOnBoardDelta(-0,-2)) {
+            list.add(new Posiciones(getX()-0, getY()-2)); 
         }
-        if (!isOwnPieceAtOffset(-2,1) && isOnBoardDelta(-2,1)) {
-            list.add(new Posiciones(getX()-2, getY()+1)); 
+        if (!isOwnPieceAtOffset(-2,0) && isOnBoardDelta(-2,0)) {
+            list.add(new Posiciones(getX()-2, getY()+0)); 
         }
-        if (!isOwnPieceAtOffset(-2,-1) && isOnBoardDelta(-2,-1)) {
-            list.add(new Posiciones(getX()-2, getY()-1)); 
+        if (!isOwnPieceAtOffset(-2,-0) && isOnBoardDelta(-2,-0)) {
+            list.add(new Posiciones(getX()-2, getY()-0)); 
         }
-        if (!isOwnPieceAtOffset(2,1) && isOnBoardDelta(2,1)) {
-            list.add(new Posiciones(getX()+2, getY()+1)); 
+        if (!isOwnPieceAtOffset(2,0) && isOnBoardDelta(2,0)) {
+            list.add(new Posiciones(getX()+2, getY()+0)); 
         }
-        if (!isOwnPieceAtOffset(2,-1) && isOnBoardDelta(2,-1)) {
-            list.add(new Posiciones(getX()+2, getY()-1)); 
+        if (!isOwnPieceAtOffset(2,-0) && isOnBoardDelta(2,-0)) {
+            list.add(new Posiciones(getX()+2, getY()-0)); 
         }
         return list;
     } 

@@ -16,8 +16,14 @@ public class Barbaro extends Piezas {
 
     public List<Posiciones> getLegalPositions(){
         List<Posiciones> list = new ArrayList<Posiciones>();
-        if (!SeMovio) {
-            list.add(new Posiciones(getX(), getY() + 2*this.cd));
+        if (!isOwnPieceAtOffset(1, 0) && isOnBoardDelta(1, 0)) {
+            list.add(new Posiciones(getX()+1, getY()));
+        }
+        if (!isOwnPieceAtOffset(-1, 0) && isOnBoardDelta(-1, 0)) {
+            list.add(new Posiciones(getX()-1, getY()));
+        }
+        if (!isOwnPieceAtOffset(0, 1) && isOnBoardDelta(0, 1)) {
+            list.add(new Posiciones(getX(), getY()+1));
         }
         list.add(new Posiciones(getX(), getY() + this.cd));
         Piezas p1 = (Piezas) getOneObjectAtOffset(-1, this.cd, Piezas.class);
