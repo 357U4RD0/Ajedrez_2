@@ -15,21 +15,20 @@ public class Seleccionador extends World
     }
     
     private void Mundos(){
-        addObject(new Clasico_(), 1,1);
-        addObject(new Imstillstanding_(),1,1 );
-        addObject(new Jumpfight_(),1,1 );
-        addObject(new Restricted_(),1,1 );
-        addObject(new Newpieces_(), 1,1);
-        addObject(new Revuelta_(),1,1 );
-        addObject(new Twokings_(), 1,1);
-        addObject(flecha, 1,1);
+        addObject(new Clasico_(), 350,100);
+        addObject(new Imstillstanding_(),350,200);
+        addObject(new Jumpfight_(),350,300);
+        addObject(new Restricted_(),350,400);
+        addObject(new Newpieces_(), 350,500);
+        addObject(new Revuelta_(),350,600);
+        addObject(flecha, 100,100);
     }
     
     public void act(){
         if (Greenfoot.isKeyDown("UP") && opcion != 0) {opcion++;}
-        if (Greenfoot.isKeyDown("DOWN") && opcion != 6) {opcion--;}
+        if (Greenfoot.isKeyDown("DOWN") && opcion != 5) {opcion--;}
         
-        flecha.setLocation(10 , 2 + (opcion*100));
+        flecha.setLocation(100 , 600 + (opcion*100));
         
         //Aquí es donde se seleccionará el modo de juego
         if (Greenfoot.isKeyDown("ENTER") || Greenfoot.isKeyDown("SPACE")){
@@ -56,10 +55,6 @@ public class Seleccionador extends World
                     
                 case 5:
                     Greenfoot.setWorld(new revuelta());
-                    break;
-                    
-                case 6:
-                    Greenfoot.setWorld(new Tablero());
                     break;
             }
         }

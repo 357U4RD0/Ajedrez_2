@@ -14,9 +14,8 @@ public class princess extends Piezas
 
     public int wiggler = 0;
     
-    public int getWiggler() {
-        return wiggler;
-        
+    public int Wiggler() {
+        return wiggler; 
     }
     
     public List<Posiciones> getLegalPositions(){

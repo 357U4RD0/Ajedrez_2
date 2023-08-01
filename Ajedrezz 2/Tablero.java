@@ -85,19 +85,12 @@ public class Tablero extends World {
     private void Cambiar() {
         Turno = -Turno;
     }
-        // Tengo fe que solo seam errores de sintaxis
+      
     private void Comer(Piezas p) {
         removeObject(p);
-        getWiggler() = getWiggler() + 1; 
+        int Wiggler = 0;
+        Wiggler++; 
     }
-    
-    private void End(Piezas p){
-        if (p.equals(ReyN||ReyB)){
-        addObject(new Ganaste(), 4, 4);
-        }
-    }
-    
-    //mira si lo arreglas vos
     
     private void NoSelec(Piezas p) {
         p.unselect();

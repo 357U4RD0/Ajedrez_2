@@ -8,12 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Revuelta_ extends Actor
 {
-    /**
-     * Act - do whatever the Revuelta_ wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        // Add your action code here.
+    public Revuelta_(){
+        setImage("Revuelta.png");
     }
 }
