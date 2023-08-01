@@ -11,7 +11,6 @@ public class Rey extends Piezas
         if (cd == 1) setImage("ReyN.png");
         else setImage("reyB.png");
     }
-   
     public List<Posiciones> getLegalPositions(){
         List<Posiciones> list = new ArrayList<Posiciones>();
         if (!isOwnPieceAtOffset(1, 0) && isOnBoardDelta(1, 0)) {
@@ -40,4 +39,7 @@ public class Rey extends Piezas
         }
         return list;
     } 
+
 }
+
+

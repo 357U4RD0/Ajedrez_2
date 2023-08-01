@@ -10,7 +10,9 @@ public class Tablero extends World {
     boolean isPieceSelected;
     Piezas PiezaSelec = new Extra();
     int Turno; 
-
+    
+    
+    
     public Tablero() {    
         super(8, 8, 50); 
         for (int i = 0; i < 8; i++) {
@@ -83,10 +85,19 @@ public class Tablero extends World {
     private void Cambiar() {
         Turno = -Turno;
     }
-    
+        // Tengo fe que solo seam errores de sintaxis
     private void Comer(Piezas p) {
         removeObject(p);
+        getWiggler() = getWiggler() + 1; 
     }
+    
+    private void End(Piezas p){
+        if (p.equals(ReyN||ReyB)){
+        addObject(new Ganaste(), 4, 4);
+        }
+    }
+    
+    //mira si lo arreglas vos
     
     private void NoSelec(Piezas p) {
         p.unselect();

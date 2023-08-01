@@ -1,5 +1,6 @@
 import greenfoot.*;
 import java.util.List;
+
 /**
  * 1 = Negro, -1 = Blanco
  */
@@ -10,7 +11,7 @@ public abstract class Piezas extends Actor {
     Piezas() {
         super();
     }
-
+    
     Piezas(int cd) {
         super();
         this.cd = cd;

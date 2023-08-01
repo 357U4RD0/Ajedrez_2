@@ -12,9 +12,16 @@ public class princess extends Piezas
         else setImage("PrincesaB.png");
     }
 
+    public int wiggler = 0;
+    
+    public int getWiggler() {
+        return wiggler;
+        
+    }
+    
     public List<Posiciones> getLegalPositions(){
         List<Posiciones> list = new ArrayList<Posiciones>();
-        int d = 1;
+        int d = 1 + wiggler;
         while (getX() + d < 8 && !isOwnPieceAtOffset(d, 0)) {
             list.add(new Posiciones(getX()+d, getY()));
             if (isPieceAtOffset(d, 0)) break;

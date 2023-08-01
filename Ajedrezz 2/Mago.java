@@ -40,6 +40,32 @@ public class Mago extends Piezas {
             d++;
         }
         return list;
+        
+        int a = 3;      
+        while (getX() + d < 2 && getY() + d < 2 && isOwnPieceAtOffset(d, d)) {
+            list.add(new Posiciones(getX()+d, getY()+d));
+            if (isPieceAtOffset(d, d)) break;
+            d++;
+        }
+        d = 3;
+        while (getX() - d >= 0 && getY() + d < 2 && isOwnPieceAtOffset(-d, d)) {
+            list.add(new Posiciones(getX()-d, getY()+d));
+            if (isPieceAtOffset(-d, d)) break;
+            d++;     
+        }
+        d = 3;
+        while (getX() + d < 2 && getY() - d >= 0 && isOwnPieceAtOffset(d, -d)) {
+            list.add(new Posiciones(getX()+d, getY()-d));
+            if (isPieceAtOffset(d, -d)) break;
+            d++;
+        }
+        d = 3;
+        while (getX() - d >= 0 && getY() - d >= 0 && isOwnPieceAtOffset(-d, -d)) {
+            list.add(new Posiciones(getX()-d, getY()-d));
+            if (isPieceAtOffset(-d,-d)) break;
+            d++;
+        }
+        return list;
     } 
     
    
